@@ -12,7 +12,13 @@
   <body>
       test lol test link: <a href="test">testttttttt</a> ok
 
-      <?php include '/php/phptest.php';?>hi hi again
+      <div id="phptest"></div>
+
+      <script>
+        $(document).ready(function() {
+            $("#phptest").load("/php/phptest.php");
+        });
+        </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
